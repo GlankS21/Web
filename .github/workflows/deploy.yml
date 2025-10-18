@@ -15,7 +15,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -23,11 +22,10 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify
-
+        run: hugo --minify --baseURL="https://glanks21.github.io/Web/" 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: ''
+          cname: '' 
