@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reports on My New Hugo Site</title>
-    <link>http://localhost:1313/Web/tags/reports/</link>
+    <link>http://localhost:51065/Web/tags/reports/</link>
     <description>Recent content in Reports on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Oct 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/Web/tags/reports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51065/Web/tags/reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Отчеты дисциплины &#34;Разработка клиентской части веб-приложений&#34; !</title>
-      <link>http://localhost:1313/Web/posts/new-post/</link>
+      <link>http://localhost:51065/Web/posts/new-post/</link>
       <pubDate>Fri, 17 Oct 2025 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/Web/posts/new-post/</guid>
+      <guid>http://localhost:51065/Web/posts/new-post/</guid>
       <description>&lt;h3 id=&#34;отчет-по-работе-с-git&#34;&gt;&lt;a href=&#34;../report/git&#34;&gt;Отчет по работе с Git&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;отчет-по-работе-с-http&#34;&gt;&lt;a href=&#34;../report/http&#34;&gt;Отчет по работе с HTTP&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
     <item>
       <title>Отчет по работе с Git</title>
-      <link>http://localhost:1313/Web/report/git/</link>
+      <link>http://localhost:51065/Web/report/git/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Web/report/git/</guid>
+      <guid>http://localhost:51065/Web/report/git/</guid>
       <description>&lt;h1 id=&#34;развертывание-сайта-на-hugo&#34;&gt;Развертывание сайта на Hugo&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Студент:&lt;/strong&gt; Хоанг Ван Куан&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Инструмент:&lt;/strong&gt; Встроенные средства IDE (VS Code с плагинами)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;command-line&#34;&gt;Command Line&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-создание-repository-repository&#34;&gt;1. Создание repository Repository&lt;/h3&gt;&#xA;&lt;p&gt;Добавляние нового удаленного репозиторий к локальному проекту&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote add origin https://github.com/GlankS21/web-porfolio.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# проверка remote&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote -v&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-добавление-и-сохранение-истории&#34;&gt;2. Добавление и сохранение истории&lt;/h3&gt;&#xA;&lt;p&gt;Добавляние всех новых, измененных и удаленных файлы из текущей директории и её поддиректорий в область подготовки&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add . &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-отправка-изменений-на-github&#34;&gt;3. Отправка изменений на GitHub&lt;/h3&gt;&#xA;&lt;p&gt;Отправка недавних коммитов c компьютера локального репозитория на сервер с удаленным репозиторием&lt;/p&gt;</description>
     </item>
     <item>
       <title>Отчет по работе с HTTP</title>
-      <link>http://localhost:1313/Web/report/http/</link>
+      <link>http://localhost:51065/Web/report/http/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Web/report/http/</guid>
-      <description>&lt;h1 id=&#34;работа-с-http-и-api&#34;&gt;Работа с HTTP и API&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Студент:&lt;/strong&gt; Хоанг Ван Куан&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;задачи&#34;&gt;Задачи&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.&lt;/li&gt;&#xA;&lt;li&gt;Отправьте запросы с помощью cURL.&lt;/li&gt;&#xA;&lt;li&gt;Отправьте с его помощью GET-запрос для получения курса одной выбранной валюты за выбранный период. Используйте API Банка России: &lt;a href=&#34;https://www.cbr.ru/development/sxml/&#34;&gt;https://www.cbr.ru/development/sxml/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-отправьте-get-и-post-запросы-на-любой-веб-ресурс-в-cli-с-помощью-telnet-или-netcat&#34;&gt;1. Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.&lt;/h3&gt;&#xA;&lt;h3 id=&#34;2-отправьте-запросы-с-помощью-curl&#34;&gt;2. Отправьте запросы с помощью cURL&lt;/h3&gt;&#xA;&lt;h4 id=&#34;get-запроса-через-curl&#34;&gt;GET-запроса через cURL:&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cURL -v [https://httppbin.org/get](https://httppbin.org/get)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../image/cURL_1.png&#34; alt=&#34;Скриншот выполнения команд в CLI&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:51065/Web/report/http/</guid>
+      <description>&lt;h1 id=&#34;работа-с-http-и-api&#34;&gt;Работа с HTTP и API&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Студент:&lt;/strong&gt; Хоанг Ван Куан&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;задачи&#34;&gt;Задачи&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.&lt;/li&gt;&#xA;&lt;li&gt;Отправьте запросы с помощью cURL.&lt;/li&gt;&#xA;&lt;li&gt;Отправьте с его помощью GET-запрос для получения курса одной выбранной валюты за выбранный период. Используйте API Банка России: &lt;a href=&#34;https://www.cbr.ru/development/sxml/&#34;&gt;https://www.cbr.ru/development/sxml/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-отправьте-get-и-post-запросы-на-любой-веб-ресурс-в-cli-с-помощью-telnet-или-netcat&#34;&gt;1. Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.&lt;/h3&gt;&#xA;&lt;h3 id=&#34;2-отправьте-запросы-с-помощью-curl&#34;&gt;2. Отправьте запросы с помощью cURL&lt;/h3&gt;&#xA;&lt;h4 id=&#34;get-запроса-через-curl&#34;&gt;GET-запроса через cURL:&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cURL -v [https://httppbin.org/get](https://httppbin.org/get)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../static/image/cURL_1.png&#34; alt=&#34;Скриншот выполнения команд в CLI&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:1313/Web/posts/</link>
+    <link>http://localhost:51065/Web/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Oct 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/Web/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51065/Web/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Отчеты дисциплины &#34;Разработка клиентской части веб-приложений&#34; !</title>
-      <link>http://localhost:1313/Web/posts/new-post/</link>
+      <link>http://localhost:51065/Web/posts/new-post/</link>
       <pubDate>Fri, 17 Oct 2025 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/Web/posts/new-post/</guid>
+      <guid>http://localhost:51065/Web/posts/new-post/</guid>
       <description>&lt;h3 id=&#34;отчет-по-работе-с-git&#34;&gt;&lt;a href=&#34;../report/git&#34;&gt;Отчет по работе с Git&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;отчет-по-работе-с-http&#34;&gt;&lt;a href=&#34;../report/http&#34;&gt;Отчет по работе с HTTP&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
   </channel>
