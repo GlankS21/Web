@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59611/Web/</loc>
+    <loc>https://glanks21.github.io/Web/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/posts/</loc>
+    <loc>https://glanks21.github.io/Web/posts/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/tags/reports/</loc>
+    <loc>https://glanks21.github.io/Web/tags/reports/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/tags/</loc>
+    <loc>https://glanks21.github.io/Web/tags/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/posts/new-post/</loc>
+    <loc>https://glanks21.github.io/Web/posts/new-post/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/tags/git/</loc>
+    <loc>https://glanks21.github.io/Web/tags/git/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/tags/http/</loc>
+    <loc>https://glanks21.github.io/Web/tags/http/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/report/git/</loc>
+    <loc>https://glanks21.github.io/Web/report/git/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/report/http/</loc>
+    <loc>https://glanks21.github.io/Web/report/http/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/report/</loc>
+    <loc>https://glanks21.github.io/Web/report/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59611/Web/categories/</loc>
+    <loc>https://glanks21.github.io/Web/categories/</loc>
   </url><url>
-    <loc>http://localhost:59611/Web/welcome-header/</loc>
+    <loc>https://glanks21.github.io/Web/welcome-header/</loc>
   </url>
 </urlset>
