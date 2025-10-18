@@ -8,20 +8,21 @@
     
     <meta name="description" content="Развертывание сайта на Hugo
 Студент: Хоанг Ван Куан
-Инструмент: Встроенные средства IDE (VS Code с плагинами)
+Инструмент: Intellij IDEA Community version
 
-Command Line
-1. Создание repository Repository
-Добавляние нового удаленного репозиторий к локальному проекту
-git remote add origin https://github.com/GlankS21/web-porfolio.git
-# проверка remote
-git remote -v
-2. Добавление и сохранение истории
-Добавляние всех новых, измененных и удаленных файлы из текущей директории и её поддиректорий в область подготовки
-git add . 
-git commit -m &#34;first commit&#34;
-3. Отправка изменений на GitHub
-Отправка недавних коммитов c компьютера локального репозитория на сервер с удаленным репозиторием">
+Настройка
+Вы можете добавить или изменить учётные записи GitHub следующим образом
+
+Перейдите в «Settings» (Ctrl &#43; Alt &#43; S или ⌘ &#43; ,)
+В строке поиска введите и выберите Version Control -&gt; GitHub.
+
+
+Основные Git
+1. Commit
+Откройте окно «Commit» (Ctrl &#43; K)
+
+Выберите файлы, которые хотите включить в коммит
+Введите краткое сообщение о коммите (обязательно)">
     
     
     <meta name="keywords" content="Git, Reports">
@@ -598,26 +599,41 @@ pre {
         </div>
         <p><h1 id="развертывание-сайта-на-hugo">Развертывание сайта на Hugo</h1>
 <p><strong>Студент:</strong> Хоанг Ван Куан</p>
-<p><strong>Инструмент:</strong> Встроенные средства IDE (VS Code с плагинами)</p>
+<p><strong>Инструмент:</strong> Intellij IDEA Community version</p>
 <hr>
-<h2 id="command-line">Command Line</h2>
-<h3 id="1-создание-repository-repository">1. Создание repository Repository</h3>
-<p>Добавляние нового удаленного репозиторий к локальному проекту</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/GlankS21/web-porfolio.git
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># проверка remote</span>
-</span></span><span style="display:flex;"><span>git remote -v
-</span></span></code></pre></div><h3 id="2-добавление-и-сохранение-истории">2. Добавление и сохранение истории</h3>
-<p>Добавляние всех новых, измененных и удаленных файлы из текущей директории и её поддиректорий в область подготовки</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add . 
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
-</span></span></code></pre></div><h3 id="3-отправка-изменений-на-github">3. Отправка изменений на GitHub</h3>
-<p>Отправка недавних коммитов c компьютера локального репозитория на сервер с удаленным репозиторием</p></p>
+<h2 id="настройка">Настройка</h2>
+<p>Вы можете добавить или изменить учётные записи GitHub следующим образом</p>
+<ol>
+<li>Перейдите в «Settings» (Ctrl + Alt + S или ⌘ + ,)</li>
+<li>В строке поиска введите и выберите Version Control -&gt; GitHub.</li>
+</ol>
+<p><img src="../../image/settings.png" alt="Скриншот settings"></p>
+<h2 id="основные-git">Основные Git</h2>
+<h4 id="1-commit">1. Commit</h4>
+<p>Откройте окно «Commit» (Ctrl + K)</p>
+<p><img src="../../image/commit.png" alt="Скриншот"></p>
+<p>Выберите файлы, которые хотите включить в коммит</p>
+<p>Введите краткое сообщение о коммите (обязательно)</p></p>
         
-        <div class="auto-numbering" id="full-content"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u origin main 
-</span></span></code></pre></div><h3 id="4-конечное-состояние-репозитория">4. Конечное состояние репозитория</h3>
-<p>Выведение коммит в виде одной строки при выполнении команды git log с этой опцией</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline
-</span></span></code></pre></div></div>
+        <div class="auto-numbering" id="full-content"><p><img src="../../image/commit2.png" alt="Скриншот"></p>
+<h4 id="2-push">2. Push</h4>
+<p>После commit нажмите Ctrl + Shift + K</p>
+<p><img src="../../image/commit.png" alt="Скриншот"></p>
+<p>В окне Push будут показаны предстоящие обязательства</p>
+<p><img src="../../image/push.png" alt="Скриншот"></p>
+<h4 id="3-pull">3. Pull</h4>
+<p>Pull — это операция загрузки последних изменений из репозитория GitHub. Вы можете это сделать с помощью Crtl + T (Udate Project)</p>
+<p><img src="../../image/commit.png" alt="Скриншот"></p>
+<h4 id="4-branches">4. Branches</h4>
+<h5 id="41-new-branch">4.1. New Branch</h5>
+<p><img src="../../image/newbrand.png" alt="Скриншот"></p>
+<h5 id="41-check-out">4.1. Check out</h5>
+<p><img src="../../image/checkout.png" alt="Скриншот"></p>
+<h5 id="42-merge">4.2. Merge</h5>
+<p><img src="../../image/merge.png" alt="Скриншот"></p>
+<ul>
+<li>При возникновении конфликта IDEA открывает графический инструмент слияния, который поможет вам самостоятельно устранить дублирующиеся строки кода</li>
+</ul></div>
         
     </article>
     <script>
