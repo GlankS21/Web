@@ -27,16 +27,16 @@ tags: ["HTTP", "Reports"]
 echo -e "cURL -v [https://httppbin.org/get](https://httppbin.org/get)
 ```
 
-![Скриншот выполнения команд в CLI](/image/cURL_1.png)
+![Скриншот выполнения команд в CLI](/static/image/cURL_1.png)
 
 #### POST-запроса через cURL:
-![Скриншот выполнения команд в CLI](/image/curl_post_1.png)
-![Скриншот выполнения команд в CLI](/image/curl_post_2.png)
+![Скриншот выполнения команд в CLI](/static/image/curl_post_1.png)
+![Скриншот выполнения команд в CLI](/static/image/curl_post_2.png)
 
 ### 3. API Банка России: https://www.cbr.ru/development/sxml/
 #### GET-запроса
-![Скриншот выполнения](/image/postman_1.png)
+![Скриншот выполнения](/static/image/postman_1.png)
 #### Параметры
-![Скриншот выполнения](/image/postman_2.png)
+![Скриншот выполнения](/static/image/postman_2.png)
 #### Результат
-![Скриншот выполнения](/image/postman_3.png)
+![Скриншот выполнения](/static/image/postman_3.png)
