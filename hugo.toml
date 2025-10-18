@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://glanks21.github.io/Web/'
+relativeURLs = true
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "neopost"
