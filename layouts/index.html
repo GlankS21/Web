@@ -1,0 +1,208 @@
+{{ define "main" }}
+  <div id="content">
+    <aside id="sidebar">
+      <!-- Avatar -->
+      <div id="avatar">
+        {{ with .Site.GetPage "section" "sidebar/_index.md" }}
+          <img class="flower" src="{{ index .Params "icon-path" }}">
+        {{ end }}
+      </div>
+
+      <!-- Bio -->
+      <div id="bio">
+        {{ with .Site.GetPage "section" "sidebar/bio.md" }}
+          {{ .Content | safeHTML }}
+        {{ end }}
+      </div>
+
+      <!-- Basic Info -->
+      <div class="small-box">
+        {{ with .Site.GetPage "section" "sidebar/basic-info.md" }}
+          {{ .Content | safeHTML }}
+        {{ end }}
+      </div>
+
+      <!-- Tags -->
+      {{ if .Site.Params.sidebar.tags.enable }}
+      <div>
+        <div class="tags"><p class="tags">Tags</p></div>
+        <ul class="tags">
+          {{ $tagsLimit := (or (index .Site.Params.sidebar.tags "limit") 5) }}
+          {{ $moreTagsText := (or (index .Site.Params.sidebar.tags "more-text") "more tags...") }}
+          {{ $tags := .Site.Taxonomies.tags | sort }}
+          {{ range first $tagsLimit $tags }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+          {{ end }}
+        </ul>
+        {{ if gt (len $tags) $tagsLimit }}
+        <div class="tags">
+          <a href="{{ relLangURL "/tags" }}"><b>{{ $moreTagsText }}</b></a>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Sidebar Links -->
+      <nav class="links">
+        {{ with .Site.GetPage "section" "sidebar/_index.md" }}
+          {{ if .Params.title }}
+          <h3 style="text-align:center; margin-bottom:10px">{{ .Params.title }}</h3>
+          {{ end }}
+          <ul>
+            {{ range .Params.links }}
+              <li><a style="min-width:300px;" href="{{ .link }}">{{ .name }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </nav>
+    </aside>
+
+    <main>
+      <!-- Welcome Header -->
+      <article id="top" class="clearfix">
+        {{ with .Site.GetPage "page" "welcome-header" }}
+        <section>
+          <div class="img-right"><img src="{{ .Params.image }}"></div>
+          <div>
+            <h1>{{ .Params.title }}</h1>
+            {{ range .Params.intro }}
+              <p>{{ . }}</p>
+            {{ end }}
+          </div>
+        </section>
+
+        {{ with .Params.skills }}
+        <section>
+          <h4>{{ .name }}</h4>
+          <ul>
+            {{ range .items }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+
+        {{ with .Params.education }}
+        <section>
+          <h4>{{ .name }}</h4>
+          {{ range .items }}
+            <div>
+              <strong>{{ .institution }} ({{ .period }})</strong>
+              <p>{{ .description }}</p>
+            </div>
+          {{ end }}
+        </section>
+        {{ end }}
+
+        {{ with .Params.contacts }}
+        <section>
+          <h4>{{ .name }}</h4>
+          <ul>
+            {{ range .items }}
+              <li>{{ .type }}: {{ .value }}</li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+
+        {{ end }}
+      </article>
+
+      <!-- Posts Section -->
+      {{ $limit := index .Site.Params "read-more" "length-limit" }}
+      {{ $pages := where .Site.RegularPages "Section" "posts" }}
+      {{ range $index, $page := (.Paginate $pages (or (index .Site.Params "posts-per-page") 5)).Pages }}
+      <article id="post-{{ $index }}">
+        {{ if index .Params "table-of-contents" }}
+        <button id="post-toc-btn-{{ $index }}" class="dropbox-btn" onclick="toggleDropbox('post-toc-{{ $index }}')">☰</button>
+        <div id="post-toc-{{ $index }}" class="dropbox-content table-of-contents float">
+          {{ partial "toc.html" $page }}
+        </div>
+        {{ end }}
+
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+        {{ $tags := $page.Params.tags }}
+        tags:
+        {{ range $i, $tag := .Params.tags }}
+          <a href="{{ relLangURL (printf "/tags/%s" $tag) }}">{{ $tag }}</a>{{ if ne $i (sub (len $tags) 1) }},{{ end }}
+        {{ end }}
+
+        <div class="post-header">
+          @{{ $page.Params.author }} <span class="timestamp">{{ $page.Date.Format "02/01/2006" }}</span>
+        </div>
+
+        <p>{{ .Summary }}</p>
+
+        {{ with index .Params "title-images" }}
+        <div class="photosetx2">
+          {{ range first 2 . }}
+            <a href="{{ . }}" target="_blank"><img src="{{ . }}"></a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="post-content readmore">
+          {{ if gt (sub (len ($page.ContentWithoutSummary | safeHTML | plainify)) 1) $limit }}
+          <div class="text-content">{{ ($page.ContentWithoutSummary | safeHTML) | truncate $limit }}</div>
+          <div class="full-content" style="display:none;">{{ $page.ContentWithoutSummary | safeHTML }}</div>
+          <summary class="read-more-btn" onclick="toggleReadMore('post-{{ $index }}')" style="display:inline;">
+            {{ index .Site.Params "read-more" "text-more" }}
+          </summary>
+          {{ else }}
+          <div class="full-content">{{ $page.ContentWithoutSummary | safeHTML }}</div>
+          {{ end }}
+        </div>
+
+        {{ with index .Params "ending-images" }}
+        <div class="photosetx3">
+          {{ range first 3 . }}
+            <a href="{{ . }}" target="_blank"><img src="{{ . }}"></a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+
+      {{ template "_internal/pagination.html" . }}
+
+      <!-- JS: Read More / Dropbox -->
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleReadMore(id) {
+        var post = document.getElementById(id);
+        var fullContent = post.getElementsByClassName("full-content")[0];
+        var btnText = post.getElementsByClassName("read-more-btn")[0];
+        var textContent = post.getElementsByClassName("text-content")[0];
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = '{{ index .Site.Params "read-more" "text-less" }}';
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = '{{ index .Site.Params "read-more" "text-more" }}';
+        }
+    }
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+
+    </main>
+{{ end }}
