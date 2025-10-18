@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:37226/Web/</loc>
+    <loc>http://localhost:1313/Web/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/posts/</loc>
+    <loc>http://localhost:1313/Web/posts/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/tags/reports/</loc>
+    <loc>http://localhost:1313/Web/tags/reports/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/tags/</loc>
+    <loc>http://localhost:1313/Web/tags/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/posts/new-post/</loc>
+    <loc>http://localhost:1313/Web/posts/new-post/</loc>
     <lastmod>2025-10-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/tags/git/</loc>
+    <loc>http://localhost:1313/Web/tags/git/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/tags/http/</loc>
+    <loc>http://localhost:1313/Web/tags/http/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/report/git/</loc>
+    <loc>http://localhost:1313/Web/report/git/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/report/http/</loc>
+    <loc>http://localhost:1313/Web/report/http/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/report/</loc>
+    <loc>http://localhost:1313/Web/report/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:37226/Web/categories/</loc>
+    <loc>http://localhost:1313/Web/categories/</loc>
   </url><url>
-    <loc>http://localhost:37226/Web/welcome-header/</loc>
+    <loc>http://localhost:1313/Web/welcome-header/</loc>
   </url>
 </urlset>
