@@ -17,7 +17,6 @@ education:
     - institution: "ITMO University, Санкт-Петербург"
       period: "2021 – 2025"
       description: "Факультет: Программная инженерия"
-
 contacts:
   name: "Контакты"
   items:
