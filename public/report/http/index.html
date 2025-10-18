@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=30763&amp;path=livereload" data-no-instant defer></script>
-    <title>Tags | My New Hugo Site</title>
-    <link rel="canonical" href="http://localhost:30763/">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Отчет по работе с HTTP | My New Hugo Site</title>
+    <link rel="canonical" href="http://localhost:1313/">
     
     
     
-    <meta name="description" content="">
+    <meta name="description" content="Работа с HTTP и API
+Студент: Хоанг Ван Куан
+
+Задачи
+
+Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.
+Отправьте запросы с помощью cURL.
+Отправьте с его помощью GET-запрос для получения курса одной выбранной валюты за выбранный период. Используйте API Банка России: https://www.cbr.ru/development/sxml/
+
+
+1. Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.
+2. Отправьте запросы с помощью cURL
+GET-запроса через cURL:
+echo -e &#34;cURL -v [https://httppbin.org/get](https://httppbin.org/get)
+">
     
+    
+    <meta name="keywords" content="HTTP, Reports">
     
     
     <style>
@@ -557,27 +573,72 @@ pre {
     <meta charset="utf-8">
 </head>
 <body>
-        <header><h1 id="My New Hugo Site"><a href="http://localhost:30763/">My New Hugo Site</a></h1></header>
+        <header><h1 id="My New Hugo Site"><a href="http://localhost:1313/">My New Hugo Site</a></h1></header>
 <main>
     
-<article style="padding-left: 2rem;">
-    <h2>tags</h2>
-    <ul>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/git/">Git</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/http/">HTTP</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/reports/">Reports</a>
-    </li>
-    
-    </ul>
-</article>
+<div id="single-post">
+
+    <article>
+        <h2>Отчет по работе с HTTP</h2>
+        
+        tags:
+        
+        <a href="/tags/HTTP">HTTP</a>,
+        
+        <a href="/tags/Reports">Reports</a>
+        
+        <div class="post-header">
+        @glankS21 <span class="timestamp">17/10/2025</span>
+        </div>
+        <p><h1 id="работа-с-http-и-api">Работа с HTTP и API</h1>
+<p><strong>Студент:</strong> Хоанг Ван Куан</p>
+<hr>
+<h2 id="задачи">Задачи</h2>
+<ol>
+<li>Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.</li>
+<li>Отправьте запросы с помощью cURL.</li>
+<li>Отправьте с его помощью GET-запрос для получения курса одной выбранной валюты за выбранный период. Используйте API Банка России: <a href="https://www.cbr.ru/development/sxml/">https://www.cbr.ru/development/sxml/</a></li>
+</ol>
+<hr>
+<h3 id="1-отправьте-get-и-post-запросы-на-любой-веб-ресурс-в-cli-с-помощью-telnet-или-netcat">1. Отправьте GET и POST запросы на любой веб-ресурс в CLI с помощью Telnet или netcat.</h3>
+<h3 id="2-отправьте-запросы-с-помощью-curl">2. Отправьте запросы с помощью cURL</h3>
+<h4 id="get-запроса-через-curl">GET-запроса через cURL:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;cURL -v [https://httppbin.org/get](https://httppbin.org/get)
+</span></span></span></code></pre></div><p><img src="/image/cURL_1.png" alt="Скриншот выполнения команд в CLI"></p></p>
+        
+        <div class="auto-numbering" id="full-content"><h4 id="post-запроса-через-curl">POST-запроса через cURL:</h4>
+<p><img src="/image/curl_post_1.png" alt="Скриншот выполнения команд в CLI">
+<img src="/image/curl_post_2.png" alt="Скриншот выполнения команд в CLI"></p>
+<h3 id="3-api-банка-россии">3. API Банка России: <a href="https://www.cbr.ru/development/sxml/">https://www.cbr.ru/development/sxml/</a></h3>
+<h4 id="get-запроса">GET-запроса</h4>
+<p><img src="/image/postman_1.png" alt="Скриншот выполнения"></p>
+<h4 id="параметры">Параметры</h4>
+<p><img src="/image/postman_2.png" alt="Скриншот выполнения"></p>
+<h4 id="результат">Результат</h4>
+<p><img src="/image/postman_3.png" alt="Скриншот выполнения"></p></div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
 
     
 </main>

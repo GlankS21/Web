@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=30763&amp;path=livereload" data-no-instant defer></script>
-    <title>Tags | My New Hugo Site</title>
-    <link rel="canonical" href="http://localhost:30763/">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title> | My New Hugo Site</title>
+    <link rel="canonical" href="http://localhost:1313/">
     
     
     
@@ -557,27 +557,45 @@ pre {
     <meta charset="utf-8">
 </head>
 <body>
-        <header><h1 id="My New Hugo Site"><a href="http://localhost:30763/">My New Hugo Site</a></h1></header>
+        <header><h1 id="My New Hugo Site"><a href="http://localhost:1313/">My New Hugo Site</a></h1></header>
 <main>
     
-<article style="padding-left: 2rem;">
-    <h2>tags</h2>
-    <ul>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/git/">Git</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/http/">HTTP</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/reports/">Reports</a>
-    </li>
-    
-    </ul>
-</article>
+<div id="single-post">
+
+    <article>
+        <h2></h2>
+        
+        tags:
+        
+        <div class="post-header">
+        @ <span class="timestamp">01/01/0001</span>
+        </div>
+        <p></p>
+        
+        <div class="auto-numbering" id="full-content"></div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
 
     
 </main>

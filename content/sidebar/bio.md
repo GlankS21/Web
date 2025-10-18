@@ -1,6 +1,6 @@
 ---
 headless: true
 ---
-meow! mochi here, your purrfect companion
+Хоанг Ван Куан
 
-rawr do you like my blog?
+Front-end разработчик из Вьетнама

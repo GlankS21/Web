@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=30763&amp;path=livereload" data-no-instant defer></script>
-    <title>Tags | My New Hugo Site</title>
+    <title>Отчет по работе с Git | My New Hugo Site</title>
     <link rel="canonical" href="http://localhost:30763/">
     
     
     
-    <meta name="description" content="">
+    <meta name="description" content="Развертывание сайта на Hugo
+Студент: Хоанг Ван Куан
+Инструмент: Встроенные средства IDE (VS Code с плагинами)
+
+Command Line
+1. Создание repository Repository
+Добавляние нового удаленного репозиторий к локальному проекту
+git remote add origin https://github.com/GlankS21/web-porfolio.git
+# проверка remote
+git remote -v
+2. Добавление и сохранение истории
+Добавляние всех новых, измененных и удаленных файлы из текущей директории и её поддиректорий в область подготовки
+git add . 
+git commit -m &#34;first commit&#34;
+3. Отправка изменений на GitHub
+Отправка недавних коммитов c компьютера локального репозитория на сервер с удаленным репозиторием">
     
+    
+    <meta name="keywords" content="Git, Reports">
     
     
     <style>
@@ -560,24 +577,65 @@ pre {
         <header><h1 id="My New Hugo Site"><a href="http://localhost:30763/">My New Hugo Site</a></h1></header>
 <main>
     
-<article style="padding-left: 2rem;">
-    <h2>tags</h2>
-    <ul>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/git/">Git</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/http/">HTTP</a>
-    </li>
-    
-    <li style="margin-bottom: .5rem;">
-            <a href="http://localhost:30763/tags/reports/">Reports</a>
-    </li>
-    
-    </ul>
-</article>
+<div id="single-post">
+
+    <article>
+        <h2>Отчет по работе с Git</h2>
+        
+        tags:
+        
+        <a href="/tags/Git">Git</a>,
+        
+        <a href="/tags/Reports">Reports</a>
+        
+        <div class="post-header">
+        @glankS21 <span class="timestamp">17/10/2025</span>
+        </div>
+        <p><h1 id="развертывание-сайта-на-hugo">Развертывание сайта на Hugo</h1>
+<p><strong>Студент:</strong> Хоанг Ван Куан</p>
+<p><strong>Инструмент:</strong> Встроенные средства IDE (VS Code с плагинами)</p>
+<hr>
+<h2 id="command-line">Command Line</h2>
+<h3 id="1-создание-repository-repository">1. Создание repository Repository</h3>
+<p>Добавляние нового удаленного репозиторий к локальному проекту</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/GlankS21/web-porfolio.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># проверка remote</span>
+</span></span><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div><h3 id="2-добавление-и-сохранение-истории">2. Добавление и сохранение истории</h3>
+<p>Добавляние всех новых, измененных и удаленных файлы из текущей директории и её поддиректорий в область подготовки</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add . 
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+</span></span></code></pre></div><h3 id="3-отправка-изменений-на-github">3. Отправка изменений на GitHub</h3>
+<p>Отправка недавних коммитов c компьютера локального репозитория на сервер с удаленным репозиторием</p></p>
+        
+        <div class="auto-numbering" id="full-content"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u origin main 
+</span></span></code></pre></div><h3 id="4-конечное-состояние-репозитория">4. Конечное состояние репозитория</h3>
+<p>Выведение коммит в виде одной строки при выполнении команды git log с этой опцией</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline
+</span></span></code></pre></div></div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
 
     
 </main>
